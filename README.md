@@ -7,8 +7,7 @@ Este proyecto permite agregar nombres a una lista de amigos y seleccionar un “
 - [Descripción](#descripción)  
 - [Instalación](#instalación)  
 - [Uso](#uso)  
-- [Funciones Principales](#funciones-principales)  
-- [Licencia](#licencia)  
+- [Funciones Principales](#funciones-principales) 
 
 ---
 ## Descripción
@@ -30,9 +29,23 @@ No se requieren dependencias externas. Solo necesitas un navegador moderno que s
 1. Escribir el nombre del amigo en el campo de texto.  
 2. Hacer clic en el botón **Agregar Amigo** para añadirlo a la lista.  
 3. La lista de amigos se mostrará en pantalla.  
-4. Hacer clic en **Sortear Amigo** para seleccionar un amigo secreto aleatorio.  
+4. Hacer clic en **Sortear Amigo** para seleccionar un amigo secreto aleatorio.
 
-```javascript
-// Ejemplo de uso
-agregarAmigo(); // Agrega el nombre ingresado a la lista
-sortearAmigo(); // Muestra un amigo secreto aleatorio
+## Funciones Principales
+1. AgregarAmigo()
+- Obtiene el valor del campo de entrada.
+- Verifica que no esté vacío.
+- Añade el nombre al arreglo listaNombresSorteados.
+- Actualiza la lista mostrada en pantalla.
+
+2. actualizaLista()
+- Limpia la lista visual en el HTML (innerHTML = "").
+- Recorre el arreglo listaNombresSorteados y crea un <li> por cada nombre.
+
+3. sortearAmigo()
+- Verifica que la lista no esté vacía.
+- Genera un número aleatorio con Math.floor(Math.random() * listaNombresSorteados.length).
+- Muestra en pantalla el nombre del amigo secreto seleccionado.
+
+4. limpiarCaja()
+- Limpia el campo de entrada de texto después de agregar un nombre.
