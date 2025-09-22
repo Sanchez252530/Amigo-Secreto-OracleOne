@@ -49,3 +49,7 @@ No se requieren dependencias externas. Solo necesitas un navegador moderno que s
 
 4. limpiarCaja()
 - Limpia el campo de entrada de texto después de agregar un nombre.
+
+## Ejemplo de uso
+![Untitled video - Made with Clipchamp](https://github.com/user-attachments/assets/d90ac2bc-c1d0-43be-ade6-897107392c9b)
+
